@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+  background-image: url("https://prog-8.com/assets/about/top-49fb9e710cc204d5b26f8c46206bb318.jpg");
+  background-size: cover;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+div, img{
+  display: block;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding: 0 ;
+  margin: 0 auto;
+}
+.top-wrapper {
+  padding: 200px 0 200px 0;
+  background-image: url(https://prog-8.com/assets/about/top-49fb9e710cc204d5b26f8c46206bb318.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 50px;
+  letter-spacing: 5px;
+  padding-top: 180px;
+}
+
+
+.top-wrapper p {
+  opacity: 0.8;
+  font-size: 17px;
+  padding-top: 50px;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  background-color: rgba(24, 49, 52, 0.9);
+  /* positionプロパティをfixedに、topを0に指定してください */
+  position:fixed;
+  top:0;
+  /* z-indexを10に指定してください */
+  z-index:10;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+  margin-
+  float: left;
+}
+
+.header-right li {
+opacity: 0.9;
+color:white;
+top: 20px;
+float: right;
+font-size:12px;
+padding: 7px 5px 5px 5px;
+color:white;
+}
+
+.header-right ul a{
+  color:white;
+}
+
+.clear{
+  clear: both;
+}
+
+.heading {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.box1{
+  width: 45%;
+  margin-right: 5%;
+  margin-top:130px;
+  margin-bottom: 10%;
+  padding-left:5%;
+  opacity: 0.5;
+  font-size:16px;
+  float:left;
+}
+
+.box1:last-child{
+  margin-right: 0;
+}
+
+.box1 h1{
+font-size: 40px;
+width:90%;
+}
+
+.box1 p{
+font-size: 14px;
+padding:5%;
+}
+
+
+.service{
+  width: 100%;
+  height: 500px;
+  background:#e6ecf0;
+}
+
+img.service_image{
+  width: 340px;
+  height: auto;
+  margin: auto;
+
+}
+.service h1{
+  text-align:center;
+  padding:50px 0 50px 0;
+  margin:0 auto;
+  opacity: 0.3;
+  font-size: 30px;
+}
+
+.service_heading p{
+  text-align:center;
+  opacity: 0.4;
+  padding:5px;
+}
+
+.service_title1 {
+  font-size: 12px;
+  padding-top:  8px;
+}
+
+.service_title2{
+  font-size: 18px;
+  margin-bottom:50px;
+}
+
+
+.service_heading{
+  text-align:center;
+}
+
+a.access {
+  border-radius: 4px;
+  opacity: 0.9;
+  padding: 8px 20px;
+  background-color: #5dca88;
+  border-bottom:0.7px solid #eee;
+  cursor:pointer;
+  box-shadow:0 5px #1a7940;
+  margin:0 auto;
+  font-size: 12px;
+  color:white;
+}

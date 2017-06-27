@@ -1,0 +1,283 @@
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  letter-spacing: 7px;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+/* z-index重なり防止*/
+}
+
+.page-wrapper {
+	clear: both;
+	background-image: url(picture/top1.png);
+	background-size: cover;
+	color: white;
+}
+
+.main{
+  background: linear-gradient(#f2fcfe,#fffcdc);
+	/*linear-gradient= グラデーション*/
+  padding-left: 30px:
+}
+
+
+.intro {
+  width: 1170px;
+  margin: 0 auto;
+	/*opacity 要素の透明度を表す*/
+}
+
+.intro h1 {
+    padding-top: 100px;
+    font-size: 60px;
+    letter-spacing: 5px;
+		/*letter-spacing 文字の間隔を指定*/
+    float:left;
+  }
+
+.intro h2 {
+    padding-top: 250px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    float:right;
+    }
+
+.summary {
+    clear: both;
+		opacity: 0.7;
+		padding: 250px 30px 100px 100px;
+    width: 850px;
+    font-size : 50px;
+}
+.summary p1{
+	letter-spacing: 5px;
+	width: 800px;
+	font-size: 15px;
+}
+.summary p2{
+	letter-spacing: 5px;
+	width: 800px;
+	font-size: 15px;
+}
+
+
+.summary a{
+	/*カーソルが乗った際のスタイルを指定*/
+			color:white;
+			opacity: 0.6;
+		}
+
+.preamble h3 {
+		border-bottom:1px solid #333;
+    letter-spacing: 5px;
+    font-size: 25px;
+    padding: 80px 50px 30px 20px;
+	  opacity: 0.7;
+    width: 500px;
+}
+
+.preamble p {
+    opacity: 0.7;
+    letter-spacing: 4px;
+    width: 1100px;
+    font-size: 17px;
+		letter-spacing: 3px;
+		padding:30px 0 15px 15px;
+}
+
+.explanation a {
+	opacity: 0.7;
+	color:#2948ff;
+}
+
+.explanation h3{
+	border-bottom:1px solid #333;
+	letter-spacing: 5px;
+	font-size: 25px;
+	padding: 80px 50px 30px 20px;
+	opacity: 0.7;
+	width: 500px;
+}
+
+.explanation p {
+	opacity: 0.7;
+	letter-spacing: 4px;
+	width: 1100px;
+	font-size: 17px;
+	letter-spacing: 3px;
+	padding:30px 0 15px 15px;
+}
+
+.explanation a {
+	opacity: 0.7;
+	color:#2948ff;
+}
+
+.participation  h3{
+	border-bottom:1px solid #333;
+	letter-spacing: 5px;
+	font-size: 25px;
+	padding: 80px 50px 30px 20px;
+	opacity: 0.7;
+	width: 500px;
+}
+
+.participation p {
+	opacity: 0.7;
+	letter-spacing: 4px;
+	width: 1100px;
+	font-size: 17px;
+	letter-spacing: 3px;
+	padding:30px 0 15px 15px;
+}
+
+.participation a {
+	opacity: 0.7;
+	color:#2948ff;
+}
+
+
+.benefits  h3{
+	border-bottom:1px solid #333;
+	letter-spacing: 5px;
+	font-size: 25px;
+	padding: 80px 50px 30px 20px;
+	opacity: 0.7;
+	width: 500px;
+}
+
+.benefits p {
+	opacity: 0.7;
+	letter-spacing: 4px;
+	width: 1100px;
+	font-size: 17px;
+	letter-spacing: 3px;
+	padding:30px 0 15px 15px;
+}
+
+.benefits a {
+	opacity: 0.7;
+	color:#2948ff;
+}
+
+
+.requirements{
+	padding:0 0 50px 0;
+}
+
+.requirements  h3{
+	border-bottom:1px solid #333;
+	letter-spacing: 5px;
+	font-size: 25px;
+	padding: 80px 50px 30px 20px;
+	opacity: 0.7;
+	width: 500px;
+	bottom:20px;
+}
+
+.requirements p {
+	opacity: 0.7;
+	width: 1200px;
+	font-size: 17px;
+	letter-spacing: 3px;
+	padding:30px 0px 15px 15px;
+}
+
+.requirements a {
+	opacity: 0.7;
+	color:#2948ff;
+}
+
+
+.sidebar {
+  padding: 35px 0px 15px 800px;
+	position: absolute;
+	top: 350px;
+  right: 30px;
+  }
+
+  .sidebar .wrapper {
+  	font: 10px verdana, sans-serif;
+  	padding: 30px ;
+  	margin-top: 400px;
+  	width: 250px;
+		right:0;
+			/* z-indexを10に指定してください */
+		z-index:10;
+
+  	}
+
+  .sidebar h3.select {
+    letter-spacing: 5px;
+  	margin: 50px  0 ;
+    font-size: 20px;
+  	}
+
+  .sidebar h3.archives {
+      letter-spacing: 5px;
+    	margin: 50px 0;
+      font-size: 20px;
+    	}
+
+  .sidebar h3.resources {
+      letter-spacing: 5px;
+      margin: 50px 0;
+    	white-space: nowrap;
+      font-size: 20px;
+    	}
+
+  .sidebar li {
+    	line-height: 1.5em;
+    	display: block;
+    	padding-top: 8px;
+    	margin:0 5px 0 0;
+    	list-style-type: none;
+			opacity: 0.6;
+			letter-spacing: 3px;
+			font-size: 15px;
+    	}
+
+  .sidebar li a:link {
+    	color: black;
+    	}
+
+  .sidebar li a:visited {
+    	color: #2948ff;
+			opacity:0.6
+    	}
+
+
+   footer{
+				text-align: center;
+				padding: 20px 0px 15px 0px ;
+        font-size:	 14px;
+				width: 100%;
+			  background-color:rgba(34, 46, 47, 0.9);
+			}
+
+			footer a{
+					  letter-spacing: 15px;
+						color:white;
+						opacity: 0.6;
+					}
+					footer a:hover{
+						/*カーソルが乗った際のスタイルを指定*/
+								color:#2948ff;
+								opacity: 0.6;
+							}
+
+							footer a:visited{
+								/*カーソルが乗った際のスタイルを指定*/
+										color:#2948ff;
+										opacity: 0.6;
+									}
+
+	@media only screen and (min-width: 768px){
+			/* media queries &break point
+			special rules for medium sized screens,
+			for example tablets */
+			}

@@ -1,0 +1,278 @@
+methods.sort　
+→symbolの呼び出し
+
+math symbols
++ plus
+- minus
+/ slash
+* asterisk
+% percent
+< less-than
+> greater-than
+<= less-than-equal
+>= greater-than-equal
+For integers,use  .to_i
+For floats,use  .to_f
+
+whole number  整数
+real number 実数
+upcase 小文字→大文字
+downcase 大文字→小文字
+#Capital letters / Small letters は名詞、Uppercase / Lowercase は形容詞
+
+.length #文字数を求める
+#最後の文字の抜きだし　.length -1
+#index番号　０,
+1,2,3…-1
+
+string class　文字列
+float class
+conbert into 転換する
+\n　\r　改行
+irb 計算、実行反映
+
+#アスキーアート（ASCII art）とは、プレーンテキストによる視覚的表現技法のこと
+
+prepend(' ').concat(' ')?
+
+insert(1, "cat")          # 2番目に挿入
+<< 'e' #語尾に挿入
+.push("f")
+delete_at
+
+Ctrl C 元に戻る
+
+$
+＠
+「a-z」
+
+ctrl shift ; ズームイン
+ctrl shift \ ズームアウト
+
+#パスワード入力制限
+require "io/console"
+print "Password: "
+input = STDIN.noecho &:gets
+print "\n"
+
+system 'cls'
+改ページ
+
+a += 1        # a の値をひとつ加算する
+a -= 1        # a の値をひとつ減算する
+
+・string class
+.length 　文字数カウント
+.reverse　文字
+
+・float class
+1.1.round
+.floor
+
+
+
+==========================
+%Q(Hello) =　”Hello”
+% Hello = "Hello"
+%q = 'Hello'
+
+%W(red blue) = p["red","blue"]
+%w(red blue) = p['red','blue']
+
+
+==================================-
+# "文字列"％値
+
+%s　文字列 #strings
+%d  整数
+%f  浮動小数 #float
+
+p "name: %10s" % "taguchi"
+#10桁分の幅を確保
+p "name: %-10s" % "taguchi"
+#10桁分の幅を確保&左寄せ
+p "id: %05d", rate: %10.2f" % [355, 3.284]
+#値が複数の場合配列[]を使う
+#値が5桁に満たない場合は"%5d"ではなく"%05d"とする
+
+#printf
+#sprints
+→文字列を返す　\n
+
+printf("name: %10s\n", "taguchi")
+sprintf("id: %05d, rate: %10.2f\n", 355, 3.284)
+
+============================
+***IF***
+
+score = gets.to_i
+#数値の場合.to_iを埋め込む
+
+# > < >= <= == !=
+# &&(and) ||(or) !(not)
+
+if score  > 80 then
+  puts "great!"
+elsif score > 60 then
+  puts "good!"
+else
+  puts "so so..."
+
+puts "great!" if socore > 80
+
+==============================
+***casse***
+
+signal = gets.chomp
+#chomp 改行コードを取り除く
+
+case signal
+when "red"
+  puts "stop!"
+when "green", "blue"
+  puts "go!"
+when "red"
+  puts "caution!"
+else
+　puts "wrong signal"
+end
+
+==========================================
+
+# while
+
+i = 0
+# i = 変数
+While i < 10 do
+ puts "#{i}: hello"
+ i += 1
+end
+#iが10より小さい間　doからendの間の処理を繰り返しなさい
+# i = i + 1 == i += 1
+
+
+# times 数字オブジェクト
+
+10.times do |i| 　　　　　　　　　　
+ puts "#{i}: hello"
+ end
+# i = 変数
+
+10.times ｛|i| puts "#{i}: hello"｝
+# do,end を波括弧｛｝で囲って1行で表示
+
+==================================================
+
+#　for
+
+for i in 15..20 do
+　p　i
+end
+#15から20までの要素(集合的なオブジェクト)を
+取り出し変数"i"に格納
+# do　と　end の間の処理を繰り返す
+#doは省略可
+
+
+for color in ["red","blue"] do
+　p　color
+end
+
+for name,score in {taguchi:200,fkoji:400}do
+　p　"#{name}: #{score}"
+end
+
+# key = name,値 = score
+#　文字列の中で展開　=　#{}
+#　ハッシュはシンボルを使って名前をスコアを表現
+#　名前とスコア2つある為、変数は2つ取ることが可能
+
+
+==============================================
+
+#　each = for
+
+(15..20).each do |i|
+　p　i
+end
+# each 集合的なオブジェクトのメソッドとして動作するため
+.each do |i|と表記する
+
+["red", "blue"].each do |color|
+p color
+end
+
+{taguchi:200,fkoji:400}.each do |name, score
+　p　"#{name}: #{score}"
+end
+
+=========================================
+
+# loop
+
+i = 0
+　loop do
+  p i
+  i += 1
+end
+
+# break ループを抜けるための命令
+# next ループをスキップするための命令
+
+
+10.times do |i|
+  if i == 7 then
+   break #0~9までカウントされるはずが、0から6までしかカウントされない
+#nextとした場合、7がスキップされる
+   end
+  p i
+end
+=============================================
+
+#メソッド
+
+def sayhi(name = "Tom") # 引数,"Tom"=引数のデフォルト値
+ puts "hi!#{name}"
+end
+
+sayhi "taguchi"
+==================================================
+#　クラス　
+class User
+# クラス名は必ず大文字から始めなくてはいけない
+attr_accessor : name
+#　setter(値の設定) :name=(value)
+#  getter(値の取得) : name
+#　上記の2つを合わせてアクセッサー（accessor）と呼ぶ
+# getterのみの定義　attr_reader
+# attr = アトリビュート
+
+ def initialize(name)
+  @name = name
+# @name =　インスタンス変数
+ end
+
+ def sayhi
+  puts "hi!#{@name}"
+ end
+
+end
+
+　tom  = User.new
+  p tom.name
+  tom.sayhi
+
+
+# ユーザークラスのオブジェクト=インスタンスに
+変数（tom）を割り当てる
+
+tom = User.new("tom")
+tom.sayhi
+
+#インスタンスは変数を使って値を保持することが出来る
+#メソッドを受け取っているオブジェクトをレシーバーと呼ぶ
+
+
+
+
+==================================================-
